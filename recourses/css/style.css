@@ -291,11 +291,49 @@ header li {
         
     #information .right {
         gap: 64px;       
-        margin: 0;
+        margin: 0 0 32px 0;
         width: 100%;
     }
     
     #information .text {
         margin-left: 16px;
     }
+
+    .course {
+        background-color: lightgrey;
+    }
+
+    .course img,
+    .course p {
+        display: none;
+    }
+
+    .courses {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;   
+        flex-direction: column;
+        padding-top: 16px;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .coursetext h3{
+        font-size: 1.1rem;
+    }
+    
+    #learning {
+        padding: 32px 0;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-style: solid;
+        border-color: lightgrey;
+    }
+    #learning.greyback {
+        background-color: white;
+    }
+    
+    /* .course {
+        width: 100%;
+    } */
 }
