@@ -1,8 +1,8 @@
 html {
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: rgb(70, 70, 70);
-}
+    color: rgb(80, 80, 80);
+    }
 
 h1 {
     font-size: 2.5rem;
@@ -117,24 +117,49 @@ header.mobile {
     box-sizing: border-box;
     width: 100%;
     padding: 8px;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(80, 80, 80);
     color: white;
     text-align: center;
 }
 
 .text {
     height: 100%;
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 2rem;
 }
 
 .banner img {
     width: 60%;
+    height: auto;
     margin: 0 24px;
 }
 
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 915px) {
+    #action.banner {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #action.banner img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .text {
+        margin: 32px 16px;
+        width: 100%;
+        gap: 0;
+    }
+
+    #action h4 {
+        margin-bottom: 24px;
+        margin-top: 32px;
+    }
+
+    .button {
+        background-color: rgb(140, 140, 140);
+    }
 }
