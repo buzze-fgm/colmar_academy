@@ -1,7 +1,30 @@
 html {
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: rgb(50, 50, 50);
+    color: rgb(70, 70, 70);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+.main {
+    margin-top: 64px;
 }
 
 
@@ -36,10 +59,9 @@ header li {
     align-items: center;
 }
 
-.logo h4 {
-    /* font-size: 1.5rem; */
+.logo {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .logo img {
@@ -51,4 +73,42 @@ header li {
     font-weight: 400;
     color: rgb(160, 160, 160);
 }
+
+/* Main Page */
+
+.banner {
+    width: 100%;
+    height: auto;
+    padding: 32px 0;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.greyback {
+    background-color: lightgrey;
+}
+
+.button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    text-align: center;
+}
+
+.text {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.banner img {
+    width: 60%;
+    margin: 0 24px;
+}
+
 
