@@ -23,6 +23,10 @@ h4 {
     font-size: 1.25rem;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .main {
     margin-top: 64px;
 }
@@ -79,13 +83,13 @@ header li {
     color: rgb(160, 160, 160);
 }
 
-@media only screen and (min-width: 830px){
+@media only screen and (min-width: 880px){
     .mobile {
         display: none;
     }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 880px) {
     .desktop {
         display: none;
     }
@@ -193,54 +197,79 @@ header li {
     color: rgb(86, 176, 236);
 }
 
+#information .text {
+    gap: 8px;
+}
 
-@media only screen and (max-width: 830px) {
-    .desktop {
-        display: none;
+.courses {
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap; 
+    padding: 32px 72px;
+    gap: 32px;
+}
+
+.course {
+    flex: 1 1 30%;
+    background-color: white;
+}
+
+.course img {
+    height: auto;
+}
+
+.coursetext {
+    padding: 16px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#learning.banner {
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+@media only screen and (max-width: 880px) {
+
+    .left {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .button {
+        background-color: rgb(140, 140, 140);
+        width: 100%;
     }
 
     #action.banner {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    .left {
-        padding: 0;
-        width: 100%;
-    }
+    }    
 
     #action .left img{
         margin: 0;
         width: 100%;
-    }
+    }    
 
     #action .right {
         width: 100%;
         margin: 32px 16px;
-    }
+    }    
 
     #action .text {
         width: 100%;
         gap: 0;
-    }
+    }    
 
     #action h4 {
         margin-bottom: 24px;
         margin-top: 32px;
-    }
-
-    .button {
-        background-color: rgb(140, 140, 140);
-        width: 100%;
-    }
+    }    
 
     .info {
         align-items: flex-start;
-    }
-    
-    #information .right {
-        gap: 64px;       
     }
     
     .info.first,
@@ -251,22 +280,22 @@ header li {
         background-color: white;
     }
     
+    #information .left {
+        display: none;
+    }
+
     .info img {
         width: 100%;
         height: auto;
     }
-    
-    #information .left {
-        display: none;
-    }
-    
+        
     #information .right {
+        gap: 64px;       
         margin: 0;
         width: 100%;
     }
     
     #information .text {
         margin-left: 16px;
-        gap: 10px;
     }
 }
