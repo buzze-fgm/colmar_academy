@@ -23,10 +23,6 @@ h4 {
     font-size: 1.25rem;
 }
 
-a {
-    color: rgb(86, 176, 236);
-}
-
 .main {
     margin-top: 64px;
 }
@@ -83,18 +79,18 @@ header li {
     color: rgb(160, 160, 160);
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 830px){
     .mobile {
         display: none;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
     .desktop {
         display: none;
     }
 
-    /* .mobile {
+    /* header.mobile {
         display: block;
     } */
     
@@ -193,7 +189,16 @@ header li {
     margin-bottom: 32px;
 }
 
-@media only screen and (max-width: 768px) {
+#information a {
+    color: rgb(86, 176, 236);
+}
+
+
+@media only screen and (max-width: 830px) {
+    .desktop {
+        display: none;
+    }
+
     #action.banner {
         margin: 0;
         display: flex;
