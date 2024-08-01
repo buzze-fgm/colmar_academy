@@ -195,7 +195,7 @@ header li {
 }
 
 #information .left img {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 #information a {
@@ -204,6 +204,10 @@ header li {
 
 #information .text {
     gap: 8px;
+}
+
+#information .right {
+    padding: 32px 0;
 }
 
 /* Learning Banner */
@@ -305,7 +309,7 @@ header li {
         
     #information .right {
         gap: 64px;       
-        margin: 0 0 32px 0;
+        margin: 0;
         width: 100%;
     }
     
