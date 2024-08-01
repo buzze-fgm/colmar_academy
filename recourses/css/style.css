@@ -83,6 +83,9 @@ header li {
     color: rgb(160, 160, 160);
 }
 
+/*  Responsive for smaller screens 
+    swich between desktop and mobile */
+
 @media only screen and (min-width: 880px){
     .mobile {
         display: none;
@@ -93,11 +96,9 @@ header li {
     .desktop {
         display: none;
     }
-
-    /* header.mobile {
-        display: block;
-    } */
     
+    /* Header Responsive */
+
     header.mobile nav {
         width: 100%;
     }
@@ -157,6 +158,8 @@ header li {
     flex-direction: column;
 }
 
+/* Action Banner */
+
 #action.banner img {
     width: 100%;
     height: auto;
@@ -165,6 +168,8 @@ header li {
 #action .text {
     width: 75%;    
 }
+
+/* Information Banner */
 
 .info {
     /* width: 100%; */
@@ -201,6 +206,8 @@ header li {
     gap: 8px;
 }
 
+/* Learning Banner */
+
 .courses {
     display: flex;
     justify-content: center;   
@@ -214,9 +221,9 @@ header li {
     background-color: white;
 }
 
-.course img {
+/* .course img {
     height: auto;
-}
+} */
 
 .coursetext {
     padding: 16px 16px 24px 16px;
@@ -230,6 +237,8 @@ header li {
     padding-top: 32px;
 }
 
+/* Responsive for smaller screens */
+
 @media only screen and (max-width: 880px) {
 
     .left {
@@ -242,6 +251,8 @@ header li {
         width: 100%;
     }
 
+    /* Action Banner Responnsive */
+
     #action.banner {
         margin: 0;
         display: flex;
@@ -250,7 +261,7 @@ header li {
 
     #action .left img{
         margin: 0;
-        width: 100%;
+        /* width: 100%; */
     }    
 
     #action .right {
@@ -267,6 +278,9 @@ header li {
         margin-bottom: 24px;
         margin-top: 32px;
     }    
+
+
+    /* Information Banner Responsiver */
 
     .info {
         align-items: flex-start;
@@ -298,6 +312,8 @@ header li {
     #information .text {
         margin-left: 16px;
     }
+
+    /* Learning Banner Responsive */
 
     .course {
         background-color: lightgrey;
@@ -333,7 +349,4 @@ header li {
         background-color: white;
     }
     
-    /* .course {
-        width: 100%;
-    } */
 }
