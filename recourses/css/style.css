@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -23,10 +23,18 @@ h4 {
     font-size: 1.25rem;
 }
 
+a {
+    color: rgb(86, 176, 236);
+}
+
 .main {
     margin-top: 64px;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 /* header */
 
@@ -75,16 +83,16 @@ header li {
     color: rgb(160, 160, 160);
 }
 
-header.mobile {
-    visibility: hidden;
+.mobile {
+    display: none;
 }
 @media only screen and (max-width: 768px) {
-    header.desktop {
-        visibility: hidden;
+    .desktop {
+        display: none;
     }
 
-    header.mobile {
-        visibility: visible;
+    .mobile {
+        display: block;
     }
     
     header.mobile nav {
@@ -103,10 +111,18 @@ header.mobile {
 .banner {
     width: 100%;
     height: auto;
-    padding: 32px 0;
+    /* padding: 32px 0; */
     display: flex;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     align-items: center;
+}
+
+.text {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .greyback {
@@ -122,34 +138,79 @@ header.mobile {
     text-align: center;
 }
 
-.text {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.left {
+    width: 60%;
+    padding: 32px 24px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
 }
 
-.banner img {
-    width: 60%;
+
+.right {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#action.banner img {
+    width: 100%;
     height: auto;
-    margin: 0 24px;
+}
+
+#action .text {
+    width: 75%;    
+}
+
+.info {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+}
+
+.info img {
+    width: 35%;
+}
+
+.info.first {
+    border-bottom-width: 2px;
+    border-style: double;
+    border-color: lightgrey;
+}
+
+.info.third {
+    background-color: lightgrey;
+}
+
+#information .left img {
+    margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 915px) {
     #action.banner {
-        padding: 0;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
     }
+    
+    .left {
+        padding: 0;
+        width: 100%;
+    }
 
-    #action.banner img {
+    #action .left img{
         margin: 0;
         width: 100%;
     }
 
-    .text {
+    #action .right {
+        width: 100%;
         margin: 32px 16px;
+    }
+
+    #action .text {
         width: 100%;
         gap: 0;
     }
@@ -161,5 +222,41 @@ header.mobile {
 
     .button {
         background-color: rgb(140, 140, 140);
+        width: 100%;
+    }
+
+    .info {
+        align-items: flex-start;
+    }
+    
+    #information .right {
+        gap: 64px;       
+    }
+    
+    .info.first,
+    .info.second,
+    .info.third {
+        flex-direction: column;
+        border-width: 0;
+        background-color: white;
+    }
+    
+    .info img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #information .left {
+        display: none;
+    }
+    
+    #information .right {
+        margin: 0;
+        width: 100%;
+    }
+    
+    #information .text {
+        margin-left: 16px;
+        gap: 10px;
     }
 }
