@@ -348,7 +348,12 @@ footer a:hover {
     .info.third {
         flex-direction: column;
         border-width: 0;
+        border-style: none;
         background-color: white;
+    }
+    
+    #information .info.first {
+        border-bottom-width: 0px;
     }
     
     #information .left {
