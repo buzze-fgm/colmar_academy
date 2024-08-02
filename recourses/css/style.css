@@ -67,6 +67,7 @@ header ul {
     gap: 16px;
     align-items: center;
     justify-content: flex-end;
+    text-align: center;
 }
 
 header li {
@@ -102,15 +103,12 @@ header a:hover {
 }
 
 
-
 /* Main Page */
 
 .banner {
     width: 100%;
     height: auto;
-    /* padding: 32px 0; */
     display: flex;
-    /* flex: 1 1 auto; */
     align-items: center;
 }
 
@@ -144,7 +142,6 @@ header a:hover {
 .right {
     width: 40%;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
 }
 
@@ -162,8 +159,6 @@ header a:hover {
 /* Information Banner */
 
 .info {
-    /* width: 100%; */
-    /* height: auto; */
     display: flex;
     padding: 16px;
     align-items: center;
@@ -186,16 +181,12 @@ header a:hover {
     border-color: lightgrey;
 }
 
-/* #information .info.third {
-    background-color: lightgrey;
-} */
-
 #information .left img {
     padding-bottom: 32px;
 }
 
 #information .text {
-    gap: 8px;
+    gap: 24px;
 }
 
 #information .right {
@@ -249,6 +240,10 @@ header a:hover {
     padding: 32px 0;
 }
 
+#thesis .left video {
+    padding-bottom: 32px;
+}
+
 
 /* Footer */
 
@@ -278,14 +273,14 @@ footer a:hover {
 
 /* ---- Responsive for smaller screens - swich between desktop and mobile ---- */
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 760px){
     .mobile {
         display: none;
     }
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 760px) {
 
     .desktop {
         display: none;
@@ -324,7 +319,6 @@ footer a:hover {
     
     #action .left img{
         margin: 0;
-        /* width: 100%; */
     }    
     
     #action .right {
@@ -402,7 +396,6 @@ footer a:hover {
     }
     
     #learning {
-        /* padding: 32px 0; */
         border-top-width: 0.5px;
         border-bottom-width: 0.5px;
         border-style: solid;
@@ -432,3 +425,4 @@ footer a:hover {
     }    
 
 }
+
