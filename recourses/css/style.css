@@ -1,8 +1,17 @@
 html {
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: rgb(80, 80, 80);
-    }
+    font-weight: 300;
+    color: rgb(90, 90, 90);
+    background-color: rgb(240, 240, 240);   
+}
+
+/* body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+} */
+
 
 h1 {
     font-size: 2.5rem;
@@ -10,30 +19,41 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 h4 {
     font-size: 1.25rem;
+    font-weight: 400;
 }
 
 a {
-    color: rgb(86, 176, 236);
+    /* color: rgb(86, 176, 236); */
+    color: rgb(90, 90, 90);
+
+    transition: color 100ms ease-out 50ms;
+
 }
 
+a:hover {
+    color: rgb(86, 176, 236);
+
+}
 
 .uppercase {
     text-transform: uppercase;
 }
 
 .main {
-    margin-top: 64px;
+    max-width: 1400px;
+    margin: 64px auto 0;
+    background-color: white;
 }
 
 img {
@@ -56,10 +76,21 @@ header {
     width: 100%;
     height: 64px;
     z-index: 100;
-    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+
+header .full {    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 header ul {
@@ -75,7 +106,9 @@ header li {
 }
 
 header a {
-    color: rgb(80, 80, 80);
+    color: rgb(90, 90, 90);
+    transition: color 100ms ease-out 50ms;
+
 }
 
 header a:hover {
@@ -98,8 +131,10 @@ header a:hover {
 }
 
 .textlogo {
-    font-weight: 400;
-    color: rgb(160, 160, 160);
+    font-weight: 300;
+    /* color: rgb(160, 160, 160); */
+    color: rgb(86, 176, 236);
+
 }
 
 
@@ -121,16 +156,21 @@ header a:hover {
 }
 
 .greyback {
-    background-color: lightgrey;
+    background-color: rgb(220, 220, 220);
 }
 
 .button {
     box-sizing: border-box;
     width: 100%;
     padding: 8px;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(90, 90, 90);
     color: white;
     text-align: center;
+    transition: background-color 100ms ease-out 50ms;
+}
+
+.button:hover {
+    background-color: rgb(86, 176, 236);
 }
 
 .left {
@@ -146,6 +186,10 @@ header a:hover {
 }
 
 /* Action Banner */
+
+/* #action.banner {
+    height: 94vh;
+} */
 
 #action.banner img {
     width: 100%;
@@ -192,6 +236,7 @@ header a:hover {
 #information .right {
     margin: 32px 0;
 }
+
 
 /* Learning Banner */
 
@@ -255,6 +300,9 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 footer ul{
@@ -263,7 +311,7 @@ footer ul{
 }
 
 footer a {
-    color: rgb(80, 80, 80);
+    color: rgb(90, 90, 90);
 }
 
 footer a:hover {
@@ -273,14 +321,43 @@ footer a:hover {
 
 /* ---- Responsive for smaller screens - swich between desktop and mobile ---- */
 
-@media only screen and (min-width: 760px){
+@media only screen and (max-width: 950px) {
+    /* #information.banner {
+        flex-direction: column;
+    } */
+
+    #information .left,
+    #thesis .left {
+        width: 50%;
+    }
+
+    #information .right,
+    #thesis .right {
+        width: 50%;
+    }
+
+    #action .text {
+        width: 100%;    
+    }
+
+    #action .right {
+        margin-right: 24px;
+    }
+    
+}
+
+@media only screen and (min-width: 690px){
     .mobile {
         display: none;
     }
 }
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 690px) {
+
+    html {
+        background-color: white;
+    }
 
     .desktop {
         display: none;
@@ -300,7 +377,7 @@ footer a:hover {
     /* Main Responsive */
 
     .left {
-        padding: 0;
+        margin: 0;
         width: 100%;
     }
     
@@ -414,6 +491,7 @@ footer a:hover {
 
     #thesis .left {
         margin: 16px 0 24px;
+        width: 100%;
     }
 
     #thesis.container {
