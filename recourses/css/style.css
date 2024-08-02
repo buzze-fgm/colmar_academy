@@ -23,6 +23,11 @@ h4 {
     font-size: 1.25rem;
 }
 
+a {
+    color: rgb(86, 176, 236);
+}
+
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -32,6 +37,11 @@ h4 {
 }
 
 img {
+    width: 100%;
+    height: auto;
+}
+
+video {
     width: 100%;
     height: auto;
 }
@@ -63,6 +73,14 @@ header li {
     list-style: none;
 }
 
+header a {
+    color: rgb(80, 80, 80);
+}
+
+header a:hover {
+    color: rgb(86, 176, 236);
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -83,31 +101,6 @@ header li {
     color: rgb(160, 160, 160);
 }
 
-/*  Responsive for smaller screens 
-    swich between desktop and mobile */
-
-@media only screen and (min-width: 880px){
-    .mobile {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    .desktop {
-        display: none;
-    }
-    
-    /* Header Responsive */
-
-    header.mobile nav {
-        width: 100%;
-    }
-
-    header.mobile ul {
-        justify-content: space-around;
-        gap: 0;
-    }
-}
 
 
 /* Main Page */
@@ -144,10 +137,7 @@ header li {
 
 .left {
     width: 60%;
-    padding: 32px 24px;
-    border-right-width: 1px;
-    border-style: solid;
-    border-color: lightgrey;
+    margin: 32px 24px;
 }
 
 
@@ -184,22 +174,24 @@ header li {
     width: 35%;
 }
 
-.info.first {
+#information .left {
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+#information .info.first {
     border-bottom-width: 2px;
     border-style: double;
     border-color: lightgrey;
 }
 
-.info.third {
+/* #information .info.third {
     background-color: lightgrey;
-}
+} */
 
 #information .left img {
     padding-bottom: 32px;
-}
-
-#information a {
-    color: rgb(86, 176, 236);
 }
 
 #information .text {
@@ -207,7 +199,7 @@ header li {
 }
 
 #information .right {
-    padding: 32px 0;
+    margin: 32px 0;
 }
 
 /* Learning Banner */
@@ -225,10 +217,6 @@ header li {
     background-color: white;
 }
 
-/* .course img {
-    height: auto;
-} */
-
 .coursetext {
     padding: 16px 16px 24px 16px;
     display: flex;
@@ -241,51 +229,122 @@ header li {
     padding-top: 32px;
 }
 
-/* Responsive for smaller screens */
+/* Thesis Banner */
 
-@media only screen and (max-width: 880px) {
+#thesis.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thesis .banner {
+    align-items: flex-start;
+}
+
+#thesis .right {
+    margin: 32px 0;
+}
+
+#thesis.container {
+    padding: 32px 0;
+}
+
+
+/* Footer */
+
+footer {
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 16px 24px 64px 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+footer ul{
+    display: flex;
+    gap: 16px;
+}
+
+footer a {
+    color: rgb(80, 80, 80);
+}
+
+footer a:hover {
+    color: rgb(86, 176, 236);
+}
+
+
+/* ---- Responsive for smaller screens - swich between desktop and mobile ---- */
+
+@media only screen and (min-width: 769px){
+    .mobile {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .desktop {
+        display: none;
+    }
+    
+    /* Header Responsive */
+    
+    header.mobile nav {
+        width: 100%;
+    }
+    
+    header.mobile ul {
+        justify-content: space-around;
+        gap: 0;
+    }
+    
+    /* Main Responsive */
 
     .left {
         padding: 0;
         width: 100%;
     }
     
+    /* Action Banner Responnsive */
+
     .button {
         background-color: rgb(140, 140, 140);
         width: 100%;
     }
-
-    /* Action Banner Responnsive */
-
+    
     #action.banner {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
     }    
-
+    
     #action .left img{
         margin: 0;
         /* width: 100%; */
     }    
-
+    
     #action .right {
         width: 100%;
         margin: 32px 16px;
     }    
-
+    
     #action .text {
         width: 100%;
         gap: 0;
     }    
-
+    
     #action h4 {
         margin-bottom: 24px;
         margin-top: 32px;
     }    
-
-
+    
+    
     /* Information Banner Responsiver */
-
+    
     .info {
         align-items: flex-start;
     }
@@ -301,12 +360,12 @@ header li {
     #information .left {
         display: none;
     }
-
+    
     .info img {
         width: 100%;
         height: auto;
     }
-        
+    
     #information .right {
         gap: 64px;       
         margin: 0;
@@ -316,9 +375,9 @@ header li {
     #information .text {
         margin-left: 16px;
     }
-
+    
     /* Learning Banner Responsive */
-
+    
     .course {
         background-color: lightgrey;
     }
