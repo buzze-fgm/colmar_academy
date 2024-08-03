@@ -545,7 +545,12 @@ footer a:hover {
     .coursetext h3{
         font-size: 1.1rem;
     }
-    
+
+    .course:hover {
+        position: static;
+        bottom: 0px;
+    }
+        
     #learning {
         border-top-width: 0.5px;
         border-bottom-width: 0.5px;
