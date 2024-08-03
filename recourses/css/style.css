@@ -4,6 +4,7 @@ html {
     font-weight: 300;
     color: rgb(90, 90, 90);
     background-color: rgb(240, 240, 240);   
+    scroll-padding-top: 4rem;
 }
 
 h1 {
@@ -67,7 +68,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 64px;
+    height: 4rem;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -79,7 +80,7 @@ header .full {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -87,7 +88,7 @@ header .full {
 
 header ul {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     justify-content: flex-end;
     text-align: center;
@@ -118,7 +119,7 @@ header a:hover {
 }
 
 .logo img {
-    height: 32px;
+    height: 2rem;
     width: auto;
 }
 
@@ -153,7 +154,7 @@ header a:hover {
 .button {
     box-sizing: border-box;
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem;
     background-color: rgb(90, 90, 90);
     color: white;
     text-align: center;
@@ -166,7 +167,7 @@ header a:hover {
 
 .left {
     width: 60%;
-    margin: 32px 24px;
+    margin: 2rem 1.5rem;
 }
 
 
@@ -182,7 +183,7 @@ header a:hover {
 #hero.banner {
     width: 100%;
     height: 94vh;
-    margin-top: 64px;
+    margin-top: 4rem;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -202,11 +203,11 @@ header a:hover {
 
 #hero .text {
     position: relative;
-    bottom: 100px;
-    left: 100px;
+    bottom: 6.25rem;
+    left: 6.25rem;
     color: black;  
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 32px;
+    padding: 2rem;
     flex: 0 1 40%;
     border-width: 1px;
     border-color: rgba(90, 90, 90, 0.3);
@@ -217,7 +218,7 @@ header a:hover {
 #hero .button {
     background-color: rgb(86, 176, 236);
     transition: none;
-    padding: 16px 0;
+    padding: 1rem 0;
     box-shadow: -1px 1px 5px rgb(90, 90, 90);
     transition: box-shadow 100ms ease-out 50ms;
 }
@@ -248,16 +249,16 @@ header a:hover {
 }
 
 #action.banner {
-    margin-top: 64px;
+    margin-top: 4rem;
 }
 
 /* Information Banner */
 
 .info {
     display: flex;
-    padding: 16px;
+    padding: 1rem;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     transition: background-color 200ms ease-out 50ms;
 }
 
@@ -282,15 +283,15 @@ header a:hover {
 }
 
 #information .left img {
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 #information .text {
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 #information .right {
-    margin: 32px 0;
+    margin: 2rem 0;
 }
 
 
@@ -300,8 +301,8 @@ header a:hover {
     display: flex;
     justify-content: center;   
     flex-wrap: wrap; 
-    padding: 32px 72px;
-    gap: 32px;
+    padding: 2rem 4.5rem;
+    gap: 2rem;
 }
 
 .course {
@@ -311,19 +312,19 @@ header a:hover {
 
 .course:hover {
     position: relative;
-    bottom: 7px;
+    bottom: 0.4375rem;
 }
 
 .coursetext {
-    padding: 16px 16px 24px 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 #learning.banner {
     flex-direction: column;
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 /* Thesis Banner */
@@ -339,15 +340,15 @@ header a:hover {
 }
 
 #thesis .right {
-    margin: 32px 0;
+    margin: 2rem 0;
 }
 
 #thesis.container {
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 #thesis .left video {
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 
@@ -357,7 +358,7 @@ footer {
     border-top-width: 0.5px;
     border-style: solid;
     border-color: lightgrey;
-    padding: 16px 24px 64px 16px;
+    padding: 1rem 1.5rem 4rem 1rem;
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
@@ -368,7 +369,7 @@ footer {
 
 footer ul{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 footer a {
@@ -410,7 +411,7 @@ footer a:hover {
     }
 
     #action .right {
-        margin-right: 24px;
+        margin-right: 1.5rem;
     }
     
 }
@@ -469,7 +470,7 @@ footer a:hover {
     
     #action .right {
         width: 100%;
-        margin: 32px 16px;
+        margin: 2rem 1rem;
     }    
     
     #action .text {
@@ -478,8 +479,8 @@ footer a:hover {
     }    
     
     #action h4 {
-        margin-bottom: 24px;
-        margin-top: 32px;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
     }    
     
     
@@ -512,13 +513,13 @@ footer a:hover {
     }
     
     #information .right {
-        gap: 64px;       
+        gap: 4rem;       
         margin: 0;
         width: 100%;
     }
     
     #information .text {
-        margin-left: 16px;
+        margin-left: 1rem;
     }
     
     /* Learning Banner Responsive */
@@ -537,9 +538,9 @@ footer a:hover {
         display: flex;
         justify-content: center;   
         flex-direction: column;
-        padding-top: 16px;
+        padding-top: 1rem;
         width: 100%;
-        gap: 8px;
+        gap: 0.5rem;
     }
 
     .coursetext h3{
@@ -564,7 +565,7 @@ footer a:hover {
     /* Thesis Banner Responsive */
 
     #thesis .left {
-        margin: 16px 0 24px;
+        margin: 1rem 0 1.5rem;
         width: 100%;
     }
 
@@ -578,7 +579,7 @@ footer a:hover {
         border-top-width: 0.5px;
         border-style: none;
         border-color: lightgrey;
-        padding: 16px;
+        padding: 1rem;
     }    
 
 }
