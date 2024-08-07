@@ -44,7 +44,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-.main {
+main {
     max-width: 1400px;
     margin: 16px auto 0;
     background-color: white;
